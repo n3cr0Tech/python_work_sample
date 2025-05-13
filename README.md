@@ -1,3 +1,15 @@
+## About
+- This sample project has elements of ETL ingestion and LLM analysis
+- I also wrote the utility classes that helped standardize how to interact with Google Cloud's Big Query, Buckets, env variable loader and Logger
+- Step_4 demos the ingestion of numerous pdf files and uploads them onto a GCP Bucket
+- Step_5 demos extracting summary data from said files on the GCP bucket
+
+## Deploying this Project
+- I deployed the entire ETL process into a Docker instance running Kestra
+    - It provides realtime gantt charts that can be monitored remotely
+    - automated deployment
+    - My flow yaml allowed me to run any git branch on any infra prefix (e.g. "integ_test", "dev", "prod")
+
 ## Running a Step
     - use command like so:
         python -m Step_N.src.driver
